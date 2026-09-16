@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference jump;
     private float moveDirection;
 
-    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float maxSpeed = 5f;
     [SerializeField] private float acceleration = 30f;
     [SerializeField] private float deceleration = 40f;
     [SerializeField] private float jumpForce = 200f;
@@ -64,10 +64,7 @@ public class PlayerMovement : MonoBehaviour
         }
         //rgbd.linearVelocity = new Vector2(moveDirection * moveSpeed * Time.deltaTime, rgbd.linearVelocity.y);
 
-        if (!canMove)
-            return;
-
-        float targetSpeed = moveDirection * moveSpeed;
+        float targetSpeed = moveDirection * maxSpeed;
 
         float speedChange;
 
@@ -80,16 +77,9 @@ public class PlayerMovement : MonoBehaviour
             speedChange = deceleration;
         }
 
-        float newSpeed = Mathf.MoveTowards(
-            rgbd.linearVelocity.x,
-            targetSpeed,
-            speedChange * Time.fixedDeltaTime
-        );
+        float newSpeed = Mathf.MoveTowards(rgbd.linearVelocity.x,targetSpeed,speedChange * Time.fixedDeltaTime);
 
-        rgbd.linearVelocity = new Vector2(
-            newSpeed,
-            rgbd.linearVelocity.y
-        );
+        rgbd.linearVelocity = new Vector2(newSpeed,rgbd.linearVelocity.y);
     }
 
     private void OnDisable()
