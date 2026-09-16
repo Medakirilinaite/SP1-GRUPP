@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference jump;
     private float moveDirection;
 
+
+    [SerializeField] private float acceleration = 7f;
+    [SerializeField] private float topSpeed = 10f;
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float jumpForce = 200f;
     [SerializeField] private Transform leftFoot, rightFoot;
@@ -61,6 +64,10 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rgbd.linearVelocity = new Vector2(moveDirection * moveSpeed * Time.deltaTime, rgbd.linearVelocity.y);
+        Vector2 currentVelocity = rgbd.linearVelocity;
+
+        print("Det här är  min speed: "+ currentVelocity);
+
     }
 
     private void OnDisable()
