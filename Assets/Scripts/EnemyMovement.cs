@@ -65,6 +65,9 @@ public class EnemyMovement : MonoBehaviour
             {
                 rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, 0);
                 rgbd.AddForce(new Vector2(0, bounciness));
+
+                //gör så att man  kan hoppa igen efter att dödat en fiende
+                other.gameObject.GetComponent<PlayerMovement>().EnableDoubleJump();
             }
 
             Destroy(gameObject);

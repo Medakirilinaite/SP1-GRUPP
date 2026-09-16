@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer rend;
     private Animator anim;
 
+    private bool canDoubleJump = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -79,6 +81,16 @@ public class PlayerMovement : MonoBehaviour
             jumpParticleSystem.Play();
             int randomJumpSound = Random.Range(0,jumpSounds.Length);
             audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
+        } else if (canDoubleJump == true)
+        {
+            //resettar ens momentum i Y-led så man inte kan stacka massa momentum
+            rgbd.linearVelocity = new Vector2(rgbd.linearVelocityX, 0);
+
+            rgbd.AddForce(new Vector2(0, jumpForce));
+            jumpParticleSystem.Play();
+            int randomJumpSound = Random.Range(0, jumpSounds.Length);
+            audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
+            canDoubleJump = false;
         }
     }
 
@@ -90,6 +102,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (leftHit.collider != null && leftHit || rightHit.collider != null && rightHit)
         {
+            EnableDoubleJump();
             return true;
         }
         else
@@ -108,6 +121,11 @@ public class PlayerMovement : MonoBehaviour
     private void CanMoveAgain()
     {
         canMove = true;
+    }
+
+    public void EnableDoubleJump()
+    {
+        canDoubleJump = true;
     }
 
 }
