@@ -7,10 +7,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference jump;
     private float moveDirection;
 
-
-    [SerializeField] private float acceleration = 7f;
-    [SerializeField] private float topSpeed = 10f;
-    [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float acceleration = 30f;
+    [SerializeField] private float deceleration = 40f;
     [SerializeField] private float jumpForce = 200f;
     [SerializeField] private Transform leftFoot, rightFoot;
     [SerializeField] private LayerMask whatIsGround;
@@ -63,11 +62,34 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        rgbd.linearVelocity = new Vector2(moveDirection * moveSpeed * Time.deltaTime, rgbd.linearVelocity.y);
-        Vector2 currentVelocity = rgbd.linearVelocity;
+        //rgbd.linearVelocity = new Vector2(moveDirection * moveSpeed * Time.deltaTime, rgbd.linearVelocity.y);
 
-        print("Det här är  min speed: "+ currentVelocity);
+        if (!canMove)
+            return;
 
+        float targetSpeed = moveDirection * moveSpeed;
+
+        float speedChange;
+
+        if (moveDirection != 0)
+        {
+            speedChange = acceleration;
+        }
+        else
+        {
+            speedChange = deceleration;
+        }
+
+        float newSpeed = Mathf.MoveTowards(
+            rgbd.linearVelocity.x,
+            targetSpeed,
+            speedChange * Time.fixedDeltaTime
+        );
+
+        rgbd.linearVelocity = new Vector2(
+            newSpeed,
+            rgbd.linearVelocity.y
+        );
     }
 
     private void OnDisable()
@@ -84,6 +106,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (CheckIsGrounded() == true)
         {
+
+            rgbd.linearVelocity = new Vector2(rgbd.linearVelocityX, 0);
+
             rgbd.AddForce(new Vector2(0, jumpForce));
             jumpParticleSystem.Play();
             int randomJumpSound = Random.Range(0,jumpSounds.Length);

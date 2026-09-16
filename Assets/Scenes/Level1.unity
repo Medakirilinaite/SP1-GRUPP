@@ -17268,7 +17268,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   move: {fileID: 3944093644375871321, guid: 5be6e9452c4064907bd7fb7c7d086f0a, type: 3}
   jump: {fileID: 4129498235600294767, guid: 5be6e9452c4064907bd7fb7c7d086f0a, type: 3}
-  moveSpeed: 250
+  moveSpeed: 5
+  acceleration: 20
+  deceleration: 30
   jumpForce: 500
   leftFoot: {fileID: 828060722}
   rightFoot: {fileID: 932336859}
