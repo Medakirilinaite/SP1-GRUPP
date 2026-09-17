@@ -136,15 +136,15 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D leftHandHit = Physics2D.Raycast(leftHand.position, Vector2.left, 0.15f, whatIsGround);
         RaycastHit2D rightHandHit = Physics2D.Raycast(rightHand.position, Vector2.right, 0.15f, whatIsGround);
-        print("Är i isOnWall");
+        //print("Är i isOnWall");
         if (leftHandHit.collider != null && leftHandHit || rightHandHit.collider != null && rightHandHit)
         {
-            print("Händer tar på nåt");
+            //print("Händer tar på nåt");
             isOnWallBool = true;
         }
         else
         {
-            print("Händer tar inte på nåt");
+            //print("Händer tar inte på nåt");
             isOnWallBool = false;
 
         }
