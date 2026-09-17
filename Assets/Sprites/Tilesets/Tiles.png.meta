@@ -2723,7 +2723,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_119
+      name: WallTop
       rect:
         serializedVersion: 2
         x: 48
@@ -3053,7 +3053,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_134
+      name: WallMid
       rect:
         serializedVersion: 2
         x: 48
@@ -3405,7 +3405,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_150
+      name: WallBot
       rect:
         serializedVersion: 2
         x: 48
@@ -3949,7 +3949,6 @@ TextureImporter:
       Tiles_116: 1066151018
       Tiles_117: 2100571714
       Tiles_118: -816880577
-      Tiles_119: 2082629369
       Tiles_12: -1929671344
       Tiles_120: -481075684
       Tiles_121: 1423343535
@@ -3966,7 +3965,6 @@ TextureImporter:
       Tiles_131: -1464589663
       Tiles_132: -258606431
       Tiles_133: -757962003
-      Tiles_134: 1634550892
       Tiles_135: -919232667
       Tiles_136: -919218683
       Tiles_137: 711872756
@@ -3984,7 +3982,6 @@ TextureImporter:
       Tiles_148: 579579147
       Tiles_149: 1248122066
       Tiles_15: -925555789
-      Tiles_150: -304255326
       Tiles_151: -400031999
       Tiles_152: 1376119092
       Tiles_153: 568796520
@@ -4099,6 +4096,9 @@ TextureImporter:
       Tiles_97: -1703341744
       Tiles_98: -1105235479
       Tiles_99: -1591899266
+      WallBot: -304255326
+      WallMid: 1634550892
+      WallTop: 2082629369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -256,11 +256,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 175
-        width: 113
-        height: 70
+        y: 176
+        width: 112
+        height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: props_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 175
-        width: 113
-        height: 84
+        x: 129
+        y: 176
+        width: 111
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: props_2
       rect:
         serializedVersion: 2
-        x: 245
-        y: 175
-        width: 59
-        height: 92
+        x: 246
+        y: 176
+        width: 57
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: props_3
       rect:
         serializedVersion: 2
-        x: 314
-        y: 175
-        width: 62
-        height: 84
+        x: 315
+        y: 176
+        width: 60
+        height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: props_4
       rect:
         serializedVersion: 2
-        x: 397
-        y: 175
-        width: 58
-        height: 83
+        x: 398
+        y: 176
+        width: 56
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,11 +366,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 127
-        width: 17
-        height: 34
+        y: 128
+        width: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: props_6
       rect:
         serializedVersion: 2
-        x: 15
-        y: 149
-        width: 50
-        height: 10
+        x: 16
+        y: 150
+        width: 48
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: props_7
       rect:
         serializedVersion: 2
-        x: 63
-        y: 143
-        width: 16
-        height: 9
+        x: 79
+        y: 144
+        width: 17
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: props_8
       rect:
         serializedVersion: 2
-        x: 78
-        y: 143
-        width: 19
-        height: 10
+        x: 113
+        y: 144
+        width: 27
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: props_9
       rect:
         serializedVersion: 2
-        x: 100
-        y: 143
-        width: 10
+        x: 146
+        y: 144
+        width: 12
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: props_10
       rect:
         serializedVersion: 2
-        x: 112
-        y: 143
-        width: 29
-        height: 14
+        x: 171
+        y: 144
+        width: 18
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: props_11
       rect:
         serializedVersion: 2
-        x: 145
-        y: 143
-        width: 14
-        height: 10
+        x: 192
+        y: 144
+        width: 16
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: props_12
       rect:
         serializedVersion: 2
-        x: 170
-        y: 143
-        width: 20
-        height: 17
+        x: 211
+        y: 112
+        width: 12
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: props_13
       rect:
         serializedVersion: 2
-        x: 191
-        y: 143
-        width: 18
-        height: 14
+        x: 225
+        y: 112
+        width: 12
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -563,12 +563,12 @@ TextureImporter:
       name: props_14
       rect:
         serializedVersion: 2
-        x: 210
-        y: 111
-        width: 14
-        height: 59
+        x: 243
+        y: 112
+        width: 12
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -585,12 +585,12 @@ TextureImporter:
       name: props_15
       rect:
         serializedVersion: 2
-        x: 224
-        y: 111
-        width: 14
-        height: 59
+        x: 257
+        y: 112
+        width: 12
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -607,12 +607,12 @@ TextureImporter:
       name: props_16
       rect:
         serializedVersion: 2
-        x: 242
-        y: 111
-        width: 14
-        height: 59
+        x: 272
+        y: 117
+        width: 8
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -629,12 +629,12 @@ TextureImporter:
       name: props_17
       rect:
         serializedVersion: 2
-        x: 256
-        y: 111
-        width: 14
-        height: 59
+        x: 296
+        y: 117
+        width: 16
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -651,12 +651,12 @@ TextureImporter:
       name: props_18
       rect:
         serializedVersion: 2
-        x: 271
-        y: 116
-        width: 10
-        height: 52
+        x: 328
+        y: 117
+        width: 8
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: props_19
       rect:
         serializedVersion: 2
-        x: 295
-        y: 116
-        width: 18
-        height: 52
+        x: 354
+        y: 152
+        width: 55
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -695,12 +695,12 @@ TextureImporter:
       name: props_20
       rect:
         serializedVersion: 2
-        x: 327
-        y: 116
-        width: 10
-        height: 52
+        x: 418
+        y: 152
+        width: 55
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -717,12 +717,12 @@ TextureImporter:
       name: props_21
       rect:
         serializedVersion: 2
-        x: 353
-        y: 151
-        width: 57
-        height: 10
+        x: 64
+        y: 144
+        width: 14
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -739,12 +739,12 @@ TextureImporter:
       name: props_22
       rect:
         serializedVersion: 2
-        x: 417
-        y: 151
-        width: 57
-        height: 10
+        x: 101
+        y: 144
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: props_23
       rect:
         serializedVersion: 2
-        x: 17
-        y: 127
-        width: 15
-        height: 17
+        x: 18
+        y: 128
+        width: 13
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -783,12 +783,12 @@ TextureImporter:
       name: props_24
       rect:
         serializedVersion: 2
-        x: 32
-        y: 127
-        width: 16
-        height: 17
+        x: 33
+        y: 128
+        width: 14
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -805,12 +805,12 @@ TextureImporter:
       name: props_25
       rect:
         serializedVersion: 2
-        x: 49
-        y: 127
-        width: 16
-        height: 17
+        x: 50
+        y: 128
+        width: 14
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -827,12 +827,12 @@ TextureImporter:
       name: props_26
       rect:
         serializedVersion: 2
-        x: 65
-        y: 127
-        width: 12
-        height: 8
+        x: 66
+        y: 128
+        width: 10
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -849,12 +849,12 @@ TextureImporter:
       name: props_27
       rect:
         serializedVersion: 2
-        x: 80
-        y: 127
-        width: 15
-        height: 8
+        x: 81
+        y: 128
+        width: 13
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -871,12 +871,12 @@ TextureImporter:
       name: props_28
       rect:
         serializedVersion: 2
-        x: 101
-        y: 127
-        width: 10
-        height: 8
+        x: 102
+        y: 128
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -893,12 +893,12 @@ TextureImporter:
       name: props_29
       rect:
         serializedVersion: 2
-        x: 145
-        y: 111
-        width: 31
-        height: 18
+        x: 146
+        y: 112
+        width: 29
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -915,12 +915,12 @@ TextureImporter:
       name: props_30
       rect:
         serializedVersion: 2
-        x: 353
-        y: 127
-        width: 57
-        height: 10
+        x: 354
+        y: 128
+        width: 55
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -937,12 +937,12 @@ TextureImporter:
       name: props_31
       rect:
         serializedVersion: 2
-        x: 417
-        y: 127
-        width: 57
-        height: 10
+        x: 418
+        y: 128
+        width: 55
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -959,12 +959,12 @@ TextureImporter:
       name: props_32
       rect:
         serializedVersion: 2
-        x: 6
-        y: 79
-        width: 36
-        height: 39
+        x: 7
+        y: 80
+        width: 34
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -981,12 +981,12 @@ TextureImporter:
       name: props_33
       rect:
         serializedVersion: 2
-        x: 70
-        y: 111
-        width: 75
-        height: 12
+        x: 71
+        y: 112
+        width: 73
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1003,12 +1003,12 @@ TextureImporter:
       name: props_34
       rect:
         serializedVersion: 2
-        x: 175
-        y: 111
-        width: 30
-        height: 14
+        x: 176
+        y: 112
+        width: 28
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1025,12 +1025,12 @@ TextureImporter:
       name: props_35
       rect:
         serializedVersion: 2
-        x: 66
-        y: 95
-        width: 30
-        height: 7
+        x: 67
+        y: 96
+        width: 28
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1047,12 +1047,12 @@ TextureImporter:
       name: props_36
       rect:
         serializedVersion: 2
-        x: 96
-        y: 95
-        width: 17
-        height: 8
+        x: 97
+        y: 96
+        width: 15
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1071,10 +1071,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
-        height: 42
+        width: 32
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1091,12 +1091,12 @@ TextureImporter:
       name: props_38
       rect:
         serializedVersion: 2
-        x: 46
+        x: 47
         y: 0
-        width: 36
-        height: 49
+        width: 34
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1113,12 +1113,12 @@ TextureImporter:
       name: props_39
       rect:
         serializedVersion: 2
-        x: 95
-        y: 15
-        width: 25
-        height: 34
+        x: 96
+        y: 16
+        width: 23
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1135,12 +1135,12 @@ TextureImporter:
       name: props_40
       rect:
         serializedVersion: 2
-        x: 128
-        y: 8
-        width: 15
-        height: 9
+        x: 137
+        y: 18
+        width: 7
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1157,12 +1157,12 @@ TextureImporter:
       name: props_41
       rect:
         serializedVersion: 2
-        x: 136
-        y: 17
-        width: 9
-        height: 15
+        x: 151
+        y: 16
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1179,12 +1179,12 @@ TextureImporter:
       name: props_42
       rect:
         serializedVersion: 2
-        x: 150
-        y: 15
-        width: 10
-        height: 8
+        x: 161
+        y: 16
+        width: 13
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1201,12 +1201,12 @@ TextureImporter:
       name: props_43
       rect:
         serializedVersion: 2
-        x: 160
-        y: 15
-        width: 15
-        height: 9
+        x: 194
+        y: 0
+        width: 13
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1223,12 +1223,12 @@ TextureImporter:
       name: props_44
       rect:
         serializedVersion: 2
-        x: 193
+        x: 208
         y: 0
-        width: 15
-        height: 42
+        width: 32
+        height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1245,12 +1245,12 @@ TextureImporter:
       name: props_45
       rect:
         serializedVersion: 2
-        x: 207
+        x: 243
         y: 0
-        width: 34
-        height: 64
+        width: 25
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1267,12 +1267,12 @@ TextureImporter:
       name: props_46
       rect:
         serializedVersion: 2
-        x: 242
+        x: 274
         y: 0
-        width: 27
-        height: 47
+        width: 28
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1289,12 +1289,12 @@ TextureImporter:
       name: props_47
       rect:
         serializedVersion: 2
-        x: 273
-        y: 0
-        width: 30
-        height: 25
+        x: 129
+        y: 9
+        width: 13
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1311,12 +1311,12 @@ TextureImporter:
       name: props_48
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 0
-        width: 15
-        height: 8
+        width: 13
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1333,12 +1333,12 @@ TextureImporter:
       name: props_49
       rect:
         serializedVersion: 2
-        x: 144
+        x: 145
         y: 0
-        width: 17
-        height: 9
+        width: 15
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1355,12 +1355,12 @@ TextureImporter:
       name: props_50
       rect:
         serializedVersion: 2
-        x: 164
+        x: 165
         y: 0
-        width: 10
-        height: 7
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1377,7 +1377,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 07a52e67f005148c08115871d73aa423
     internalID: 0
     vertices: []
     indices: 
@@ -1385,7 +1385,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       props_0: 6158802113039044628
       props_1: -5693590246162419906
