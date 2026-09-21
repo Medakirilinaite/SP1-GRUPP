@@ -9,17 +9,19 @@ public class QuestChecker : MonoBehaviour
     [SerializeField] private float textSpeed = 0.05f;
     [SerializeField] private GameObject worldPanel; 
     [SerializeField] private TextMeshProUGUI worldText; 
-    [TextArea(3, 10)] [SerializeField] private string[] finishedLines;
-    [TextArea(3, 10)] [SerializeField] private string[] unfinishedLines;
+    [SerializeField] private string[] finishedLines;
+    [SerializeField] private string[] unfinishedLines;
 
     private Animator anim;
-    private bool hasTriggeredSuccess = false;
     private Coroutine typingCoroutine;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        if (worldPanel != null) worldPanel.SetActive(false);
+        if (worldPanel != null) 
+        {
+            worldPanel.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,36 +29,40 @@ public class QuestChecker : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerQuest playerQuest = other.GetComponent<PlayerQuest>();
-            if (playerQuest == null) return;
-
-            if (worldPanel != null) worldPanel.SetActive(true);
-            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+            if (worldPanel != null) 
+            {
+                worldPanel.SetActive(true);
+            }
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+            }
 
             if (playerQuest.GetMelons() >= playerQuest.GetMelonsToCollect())
             {
-                if (hasTriggeredSuccess) return;
-                hasTriggeredSuccess = true;
-
                 typingCoroutine = StartCoroutine(TypeText(finishedLines));
-                if (anim != null) anim.SetTrigger("Flag");
+                anim.SetTrigger("Flag");
                 Invoke(nameof(LoadNextLevel), 5.0f); 
             }
             else
             {
-                if (!hasTriggeredSuccess)
-                {
-                    typingCoroutine = StartCoroutine(TypeText(unfinishedLines));
-                }
+                typingCoroutine = StartCoroutine(TypeText(unfinishedLines));
             }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (collision.CompareTag("Player") && !hasTriggeredSuccess)
+        if (other.CompareTag("Player")) 
         {
-            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-            if (worldPanel != null) worldPanel.SetActive(false);
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+            }
+            if (worldPanel != null) 
+            {
+                worldPanel.SetActive(false);
+            }
         }
     }
 

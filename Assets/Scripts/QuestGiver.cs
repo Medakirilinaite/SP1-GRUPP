@@ -7,32 +7,40 @@ public class QuestGiver : MonoBehaviour
     [SerializeField] private float textSpeed = 0.05f;
     [SerializeField] private GameObject worldPanel; 
     [SerializeField] private TextMeshProUGUI worldText; 
-    [TextArea(3, 10)] [SerializeField] private string[] dialogueLines;
+    [SerializeField] private string[] dialogueLines;
 
     private Coroutine typingCoroutine;
-
-    private void Start()
-    {
-        if (worldPanel != null) worldPanel.SetActive(false);
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            if (worldPanel != null) worldPanel.SetActive(true);
-            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+            if (worldPanel != null) 
+            {
+                worldPanel.SetActive(true);
+            }
 
+            if (typingCoroutine != null) 
+            {
+                StopCoroutine(typingCoroutine);
+            }
+            
             typingCoroutine = StartCoroutine(TypeText(dialogueLines));
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (collision.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-            if (worldPanel != null) worldPanel.SetActive(false);
+            if (typingCoroutine != null) 
+            {
+                StopCoroutine(typingCoroutine);
+            }
+            if (worldPanel != null) 
+            {
+                worldPanel.SetActive(false);
+            }
         }
     }
 
@@ -46,7 +54,10 @@ public class QuestGiver : MonoBehaviour
                 worldText.text += c;
                 yield return new WaitForSeconds(textSpeed);
             }
-            if (i < lines.Length - 1) yield return new WaitForSeconds(2.0f);
+            if (i < lines.Length - 1)
+            {
+                yield return new WaitForSeconds(2.0f);
+            }
         }
     }
 }
