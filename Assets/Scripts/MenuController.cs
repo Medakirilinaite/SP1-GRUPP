@@ -5,6 +5,7 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField] private int sceneIndex;
     [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject controlsPanel;
     public void StartGame()
     {
         SceneManager.LoadScene(sceneIndex);
@@ -13,6 +14,16 @@ public class MenuController : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ShowControls()
+    {
+        controlsPanel.SetActive(true);
+    }
+
+    public void HideControls()
+    {
+        controlsPanel.SetActive(false);
     }
 
     public void ShowCredits()
