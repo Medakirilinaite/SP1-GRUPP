@@ -115,10 +115,21 @@ public class PlayerMovement : MonoBehaviour
             audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
         } else if (isOnWallBool== true && moveDirection!= 0) {
 
-            rgbd.AddForce(new Vector2(jumpForce, jumpForce*0.75f));
-            jumpParticleSystem.Play();
-            int randomJumpSound = Random.Range(0, jumpSounds.Length);
-            audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
+            if (moveDirection < 0)
+            {
+                rgbd.AddForce(new Vector2(jumpForce, jumpForce * 0.65f));
+                jumpParticleSystem.Play();
+                int randomJumpSound = Random.Range(0, jumpSounds.Length);
+                audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
+            }
+            if (moveDirection > 0)
+            {
+                rgbd.AddForce(new Vector2(-jumpForce, jumpForce * 0.65f));
+                jumpParticleSystem.Play();
+                int randomJumpSound = Random.Range(0, jumpSounds.Length);
+                audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
+            }
+
         }
         else if (canDoubleJump == true)
         {
