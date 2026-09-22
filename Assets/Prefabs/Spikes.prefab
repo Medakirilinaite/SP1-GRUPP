@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8783690707202130631
+--- !u!1 &8648210102829575981
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5680654246334345654}
-  - component: {fileID: 6494327780303254988}
-  - component: {fileID: 874950811209002455}
-  - component: {fileID: -4374855004371533715}
-  m_Layer: 0
-  m_Name: Melon
-  m_TagString: Untagged
+  - component: {fileID: 5407733555822694685}
+  - component: {fileID: 6807141069431123672}
+  - component: {fileID: 703757469727787756}
+  - component: {fileID: 5162759623665198148}
+  m_Layer: 7
+  m_Name: Spikes
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5680654246334345654
+--- !u!4 &5407733555822694685
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8783690707202130631}
+  m_GameObject: {fileID: 8648210102829575981}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.86, y: 0.73, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 16.2, y: -1.02, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6494327780303254988
+--- !u!212 &6807141069431123672
 SpriteRenderer:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8783690707202130631}
+  m_GameObject: {fileID: 8648210102829575981}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4865145321589616951, guid: 66d33c3fcd33a4a23b61d5c74415ae62, type: 3}
+  m_Sprite: {fileID: -2060039225, guid: faa92af4224f047a1b7628ceba0c97a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,26 +94,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &874950811209002455
-MonoBehaviour:
+--- !u!61 &703757469727787756
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8783690707202130631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed178b0b3222b48cc99dbb042a299e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MelonPickup
-  melonParticleSystem: {fileID: 3202777611725238367, guid: e3a672affa4ec44e6b74e7b1227076a3, type: 3}
---- !u!58 &-4374855004371533715
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8783690707202130631}
+  m_GameObject: {fileID: 8648210102829575981}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -141,5 +128,28 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: -0.0311172, y: -0.23693806}
+  m_SpriteTilingProperty:
+    border: {x: 0.125, y: 0, z: 0.1875, w: 0.4375}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.59336233, y: 0.12317383}
+  m_EdgeRadius: 0
+--- !u!114 &5162759623665198148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8648210102829575981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c564fc23ff747f9a5c7a4fd18de416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpikesDamage
+  damageGiven: 1
