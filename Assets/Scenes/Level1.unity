@@ -2036,6 +2036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
   timeText: {fileID: 1637514559}
+  index: 1
   timeLeft: 45
   startTimer: 0
 --- !u!61 &619394804

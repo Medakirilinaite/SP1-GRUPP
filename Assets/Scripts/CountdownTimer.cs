@@ -5,18 +5,19 @@ using UnityEngine.SceneManagement;
 public class CountdownTimer : MonoBehaviour
 {
     [SerializeField] private TMP_Text timeText;
-
+    [SerializeField] private int index;
     [SerializeField] private float timeLeft;
 
     private GameObject startZone;
     private Light2D myLight;
 
     public bool startTimer = false;
-    private int levelIndex = 3;
+    //private int levelIndex = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         myLight = GetComponent<Light2D>();
+        startTimer = false;
     }
 
     // Update is called once per frame
@@ -26,10 +27,7 @@ public class CountdownTimer : MonoBehaviour
         if(startTimer == true)
         {
             timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
-            {
-                LoadNextLevel();
-            }
+
 
             if (timeLeft < 10)
             {
@@ -39,6 +37,10 @@ public class CountdownTimer : MonoBehaviour
 
             //timeText.text = ""+timeLeft;
             timeText.SetText("{0:0}", timeLeft);
+
+            if( timeLeft <= 0){
+                Application.LoadLevel(index);
+            }
         }
 
 
@@ -54,7 +56,7 @@ public class CountdownTimer : MonoBehaviour
     }
     private void LoadNextLevel()
     {
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadScene(index);
     }
     private void setLightLevel(float lightLevel)
     {
